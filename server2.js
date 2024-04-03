@@ -8,8 +8,16 @@ let host = 'localhost';
 const server = http.createServer((req, res) =>{
     //header
     res.setHeader('Content-type', 'text/html');
-    fs.readFile()
-    res.end();
+    fs.readFile('pag1.html', (erro, data)=>{
+        if (erro) {
+            console.log("Erro!!");
+            res.write('Deu ruim!');
+            res.end();
+        } else {
+            res.write(data);
+            res.end();
+        }
+    });
 })
 
 server.listen(porta, host, ()=>{
