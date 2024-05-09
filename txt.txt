@@ -1,7 +1,0 @@
-git init
-git add .
-git commit -m ""
-git config --global user.email "sarah.kichler.estudante@petrobras.com.br"
-git config --global user.name "Sarah"
-git commit -m ""
-git push
